@@ -23,5 +23,5 @@ Thumbs.db
 # Node (if frontend exists)
 node_modules/
 # Do not commit sensitive configuration files
-appsettings.json
-appsettings.*.json
+#appsettings.json
+#appsettings.*.json
