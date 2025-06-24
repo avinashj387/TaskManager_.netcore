@@ -1,5 +1,8 @@
-using TaskManager.Data;
 using Microsoft.EntityFrameworkCore;
+using TaskManager.Data;
+using TaskManager.Interfaces;
+using TaskManager.Repositories;
+using TaskManager.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +23,8 @@ builder.Services.AddCors(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+builder.Services.AddScoped<ITaskService, TaskService>();
 
 var app = builder.Build();
 
