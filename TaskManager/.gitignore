@@ -1,0 +1,27 @@
+# Ignore user-specific files
+*.user
+*.suo
+*.csproj.user
+*.rsuser
+
+# Ignore VS folders
+.vs/
+.vscode/
+.idea/
+
+# Build folders
+bin/
+obj/
+artifacts/
+Debug/
+Release/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node (if frontend exists)
+node_modules/
+# Do not commit sensitive configuration files
+appsettings.json
+appsettings.*.json
